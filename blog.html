@@ -442,6 +442,19 @@
     }
   }
 
+
+  /* Cards do blog inteiramente clicáveis */
+  .post-card, .post-card-horiz { position: relative; cursor: pointer; }
+  .post-card .card-link-overlay,
+  .post-card-horiz .card-link-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+  }
+  .post-card .post-link,
+  .post-card-horiz .post-link { position: relative; z-index: 2; }
+
 </style>
   <style>
     .blog-hero { background:var(--off-white);padding:5rem 8vw 4rem;text-align:center;position:relative;overflow:hidden; }
@@ -532,7 +545,9 @@
     <div class="posts-main fade-up">
 
       <!-- Post destaque -->
-      <article class="post-card">
+      <article class="post-card" style="position:relative">
+        <a href="obesidade-infantil.html" class="card-link-overlay" aria-label="Ler artigo completo"></a>
+        
         <div class="post-img">
           <div class="post-img-placeholder" style="background:linear-gradient(135deg,#e8f0ee,#a8c5bc)">🧒</div>
         </div>
@@ -548,7 +563,9 @@
       </article>
 
       <!-- Post horizontal 2 -->
-      <article class="post-card-horiz">
+      <article class="post-card-horiz" style="position:relative">
+        <a href="vicio-em-telas.html" class="card-link-overlay" aria-label="Ler artigo completo"></a>
+        
         <div class="post-img">
           <div class="post-img-placeholder" style="background:linear-gradient(135deg,#f7f5f2,#e8f0ee)">📱</div>
         </div>
@@ -563,7 +580,9 @@
       </article>
 
       <!-- Post horizontal 3 -->
-      <article class="post-card-horiz">
+      <article class="post-card-horiz" style="position:relative">
+        <a href="primeiro-ano-do-bebe.html" class="card-link-overlay" aria-label="Ler artigo completo"></a>
+        
         <div class="post-img">
           <div class="post-img-placeholder" style="background:linear-gradient(135deg,#e8f0ee,#7aaa9b)">👶</div>
         </div>
@@ -578,7 +597,9 @@
       </article>
 
       <!-- Post horizontal 4 -->
-      <article class="post-card-horiz">
+      <article class="post-card-horiz" style="position:relative">
+        <a href="saude-adolescente-hebiatria.html" class="card-link-overlay" aria-label="Ler artigo completo"></a>
+        
         <div class="post-img">
           <div class="post-img-placeholder" style="background:linear-gradient(135deg,#f7f5f2,#a8c5bc)">🌱</div>
         </div>
