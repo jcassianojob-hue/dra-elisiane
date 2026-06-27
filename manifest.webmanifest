@@ -1,0 +1,19 @@
+{
+  "name": "Dra. Elisiane Elias — Pediatria e Hebiatria",
+  "short_name": "Dra. Elisiane",
+  "description": "Pediatra e hebiatra com atendimento humanizado a crianças e adolescentes em Vila Leopoldina (SP) e Osasco. CRM SP 71423.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f7f5f2",
+  "theme_color": "#2d6b5e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

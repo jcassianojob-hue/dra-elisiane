@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidade | Dra. Elisiane Elias</title>
+  <meta name="description" content="Política de Privacidade do site da Dra. Elisiane Elias: como tratamos seus dados, cookies, terceiros e seus direitos conforme a LGPD."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.draelisianeelias.com.br/privacidade"/>
+  <meta property="og:title" content="Política de Privacidade | Dra. Elisiane Elias"/>
+  <meta property="og:description" content="Como tratamos seus dados, cookies, terceiros e seus direitos conforme a LGPD."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --sage:        #7aaa9b;
+      --sage-dark:   #4e8c7c;
+      --sage-light:  #a8c5bc;
+      --sage-bg:     #e8f0ee;
+      --sage-section:#2d6b5e;
+      --white:       #ffffff;
+      --off-white:   #f7f5f2;
+      --gray-200:    #e0ddd8;
+      --gray-400:    #9e9b96;
+      --text:        #1a1a1a;
+      --text-soft:   #4a4a4a;
+      --accent:      #c47c5a;
+      --font-serif:  'Playfair Display', Georgia, serif;
+      --font-sans:   'DM Sans', sans-serif;
+      --radius:      16px;
+      --radius-lg:   32px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); color: var(--text); background: var(--white); line-height: 1.65; overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.96); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0 5vw;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--sage-dark); line-height: 1.2; }
+    .nav-logo span { font-weight: 300; font-size: 0.78rem; display: block; color: var(--text-soft); font-family: var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 2rem; font-size: 0.88rem; font-weight: 500; color: var(--text-soft); }
+    .nav-links a:hover { color: var(--sage-dark); }
+    .nav-cta { background: var(--sage-dark); color: var(--white); padding: 0.55rem 1.3rem; border-radius: 100px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--sage-section); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .nav-hamburger span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; display: block; }
+
+    /* HERO */
+    .hero {
+      background: var(--off-white);
+      min-height: 92vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 5rem 8vw 3rem;
+      gap: 4rem;
+      position: relative; overflow: hidden;
+    }
+    .hero::before { content: ''; position: absolute; width: 520px; height: 520px; border-radius: 50%; background: var(--sage-bg); top: -120px; right: -80px; z-index: 0; }
+    .hero::after { content: ''; position: absolute; width: 220px; height: 220px; border-radius: 50%; border: 40px solid var(--sage-bg); bottom: -60px; left: -60px; z-index: 0; }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage-dark); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.6rem; }
+    .hero-eyebrow::before { content: ''; width: 28px; height: 2px; background: var(--sage-dark); border-radius: 2px; }
+    .hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1.4rem; }
+    .hero h1 em { color: var(--sage-dark); font-style: normal; }
+    .hero-desc { font-size: 1rem; color: var(--text-soft); max-width: 480px; margin-bottom: 2rem; line-height: 1.75; }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary { background: var(--sage-dark); color: var(--white); padding: 0.85rem 1.8rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s, transform 0.2s; }
+    .btn-primary:hover { background: var(--sage-section); transform: translateY(-1px); }
+    .btn-outline { border: 2px solid var(--sage-dark); color: var(--sage-dark); padding: 0.85rem 1.8rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
+    .btn-outline:hover { background: var(--sage-dark); color: var(--white); }
+    .hero-locations { margin-top: 2.5rem; display: flex; gap: 1.5rem; font-size: 0.8rem; color: var(--text-soft); flex-wrap: wrap; }
+    .hero-locations span { display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Hero imagem */
+    .hero-image-wrap { position: relative; z-index: 1; display: flex; justify-content: center; }
+    .hero-image-wrap .circle-bg { position: absolute; width: 90%; padding-bottom: 90%; border-radius: 50%; background: var(--sage-bg); top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; }
+    .hero-image-wrap .deco-ring { position: absolute; width: 120px; height: 120px; border-radius: 50%; border: 30px solid var(--sage-light); opacity: 0.5; bottom: 20px; right: -10px; z-index: 0; }
+    .hero-img-frame { position: relative; z-index: 1; width: 85%; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 3/4; }
+    .hero-img-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .hero-badge { position: absolute; bottom: -12px; left: -20px; background: var(--white); border-radius: var(--radius); padding: 0.8rem 1.2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.10); display: flex; align-items: center; gap: 0.8rem; z-index: 2; }
+    .hero-badge-icon { width: 44px; height: 44px; background: var(--sage-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--sage-dark); }
+    .hero-badge-text { font-size: 0.78rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+    .hero-badge-text small { font-weight: 400; color: var(--text-soft); }
+
+    /* SEÇÕES */
+    .section { padding: 5rem 8vw; }
+    .section-eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage-dark); margin-bottom: 0.8rem; }
+    .section-title { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; line-height: 1.25; color: var(--text); max-width: 560px; }
+    .section-title em { color: var(--sage-dark); font-style: normal; }
+    .section-desc { color: var(--text-soft); font-size: 0.95rem; line-height: 1.75; margin-top: 1rem; max-width: 480px; }
+
+    /* DIFERENCIAIS */
+    .diferenciais { background: var(--white); }
+    .diferenciais-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 1rem; }
+    .card { background: var(--off-white); border-radius: var(--radius); padding: 1.5rem; transition: box-shadow 0.2s, transform 0.2s; }
+    .card:hover { box-shadow: 0 8px 28px rgba(78,140,124,0.12); transform: translateY(-2px); }
+    .card-icon { width: 48px; height: 48px; background: var(--sage-bg); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--sage-dark); margin-bottom: 1rem; }
+    .card h3 { font-size: 0.92rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .card p { font-size: 0.82rem; color: var(--text-soft); line-height: 1.6; }
+
+    /* SOBRE */
+    .sobre-section { background: var(--sage-section); color: var(--white); padding: 5rem 8vw; }
+    .sobre-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .sobre-content .section-eyebrow { color: var(--sage-light); }
+    .sobre-content .section-title { color: var(--white); max-width: 100%; }
+    .sobre-content p { color: rgba(255,255,255,0.82); font-size: 0.95rem; line-height: 1.8; margin-top: 1rem; }
+    .sobre-img-wrap { position: relative; }
+    .sobre-img-card { border-radius: var(--radius-lg); aspect-ratio: 4/5; overflow: hidden; }
+    .sobre-img-card img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .sobre-deco { position: absolute; width: 100px; height: 100px; border-radius: 50%; border: 24px solid rgba(255,255,255,0.12); top: -20px; right: -20px; }
+
+    /* ESPECIALIDADES */
+    .especialidades { background: var(--off-white); }
+    .espec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem; }
+    .espec-card { background: var(--white); border-radius: var(--radius-lg); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: box-shadow 0.3s, transform 0.3s; }
+    .espec-card:hover { box-shadow: 0 12px 40px rgba(78,140,124,0.14); transform: translateY(-3px); }
+    .espec-img { overflow: hidden; }
+    .espec-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .espec-card:hover .espec-img img { transform: scale(1.04); }
+    .espec-content { padding: 2rem 1.8rem; display: flex; flex-direction: column; justify-content: center; }
+    .espec-content .section-eyebrow { margin-bottom: 0.5rem; }
+    .espec-content h2 { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+    .espec-list { margin-bottom: 1.5rem; }
+    .espec-list li { font-size: 0.85rem; color: var(--text-soft); padding: 0.3rem 0 0.3rem 1.2rem; position: relative; }
+    .espec-list li::before { content: '✓'; position: absolute; left: 0; color: var(--sage-dark); font-weight: 700; }
+    .btn-sm { background: var(--sage-dark); color: var(--white); padding: 0.65rem 1.3rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; align-self: flex-start; transition: background 0.2s; }
+    .btn-sm:hover { background: var(--sage-section); }
+
+    /* DEPOIMENTOS */
+    .depoimentos { background: var(--white); }
+    .depo-header { margin-bottom: 2.5rem; }
+    .depo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .depo-card { background: var(--off-white); border-radius: var(--radius); padding: 1.8rem; }
+    .depo-stars { color: var(--accent); font-size: 0.85rem; margin-bottom: 0.8rem; letter-spacing: 2px; }
+    .depo-text { font-size: 0.88rem; color: var(--text-soft); line-height: 1.75; margin-bottom: 1.2rem; font-style: italic; }
+    .depo-author { display: flex; align-items: center; gap: 0.8rem; }
+    .depo-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--sage-bg); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; color: var(--sage-dark); font-size: 0.9rem; flex-shrink: 0; }
+    .depo-name { font-size: 0.85rem; font-weight: 600; }
+    .depo-role { font-size: 0.75rem; color: var(--text-soft); }
+
+    /* CTA VERDE */
+    .cta-section { background: var(--sage-section); color: var(--white); padding: 5rem 8vw; }
+    .cta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .cta-content .section-eyebrow { color: var(--sage-light); }
+    .cta-content .section-title { color: var(--white); max-width: 100%; }
+    .cta-content p { color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.8; margin-top: 1rem; }
+    .cta-content .btn-white { margin-top: 2rem; background: var(--white); color: var(--sage-section); padding: 0.85rem 1.8rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: background 0.2s, transform 0.2s; }
+    .cta-content .btn-white:hover { background: var(--sage-bg); transform: translateY(-1px); }
+    .cta-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .cta-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: var(--radius); padding: 1.5rem; transition: background 0.2s; }
+    .cta-card:hover { background: rgba(255,255,255,0.15); }
+    .cta-card-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: white; }
+    .cta-card h4 { font-size: 0.92rem; font-weight: 600; color: var(--white); margin-bottom: 0.3rem; }
+    .cta-card p { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
+
+    /* LOCALIZAÇÕES */
+    .locais { background: var(--off-white); }
+    .locais-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+    .local-card { background: var(--white); border-radius: var(--radius); padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.05); display: flex; gap: 1.2rem; align-items: flex-start; }
+    .local-pin { width: 48px; height: 48px; flex-shrink: 0; background: var(--sage-bg); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--sage-dark); }
+    .local-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .local-card p { font-size: 0.85rem; color: var(--text-soft); line-height: 1.6; }
+    .local-card a { color: var(--sage-dark); font-size: 0.82rem; font-weight: 600; margin-top: 0.5rem; display: inline-block; }
+
+    /* FAQ */
+    .faq { background: var(--white); }
+    .faq-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .faq-list { margin-top: 2rem; }
+    .faq-item { border-bottom: 1px solid var(--gray-200); }
+    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 1.2rem 0; font-family: var(--font-sans); font-size: 0.92rem; font-weight: 600; color: var(--text); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-question .icon { font-size: 1.2rem; color: var(--sage-dark); flex-shrink: 0; transition: transform 0.3s; font-style: normal; }
+    .faq-answer { font-size: 0.88rem; color: var(--text-soft); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s; }
+    .faq-item.open .faq-answer { max-height: 300px; padding-bottom: 1.2rem; }
+    .faq-item.open .icon { transform: rotate(45deg); }
+
+    /* FOOTER */
+    footer { background: var(--text); color: rgba(255,255,255,0.75); padding: 3.5rem 8vw 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand .nav-logo { color: var(--white); }
+    .footer-brand p { font-size: 0.83rem; margin-top: 0.8rem; line-height: 1.7; max-width: 240px; }
+    .footer-col h4 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--white); margin-bottom: 1rem; }
+    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li a { font-size: 0.85rem; color: rgba(255,255,255,0.65); transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--white); }
+    .footer-contact p { font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .footer-contact a { color: var(--sage-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; display: flex; justify-content: space-between; font-size: 0.78rem; flex-wrap: wrap; gap: 0.5rem; }
+
+    /* WHATSAPP */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; background: #25D366; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 24px rgba(37,211,102,0.4); transition: transform 0.2s; }
+    .whatsapp-float:hover { transform: scale(1.08); }
+
+    /* ANIMAÇÕES */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      nav { padding: 0 5vw; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+      .hero { grid-template-columns: 1fr; padding: 4rem 6vw 3rem; gap: 2rem; min-height: auto; text-align: center; }
+      .hero::before { display: none; }
+      .hero-locations { justify-content: center; }
+      .hero-buttons { justify-content: center; }
+      .hero-image-wrap { order: -1; }
+      .hero-badge { left: 0; right: 0; width: fit-content; margin: 0 auto; }
+      .diferenciais-inner, .sobre-inner, .cta-inner, .faq-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+      .espec-grid { grid-template-columns: 1fr; }
+      .espec-card { grid-template-columns: 1fr; }
+      .depo-grid { grid-template-columns: 1fr; }
+      .locais-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .section { padding: 4rem 6vw; }
+      .sobre-section, .cta-section { padding: 4rem 6vw; }
+    }
+    @media (max-width: 520px) {
+      .cards-grid, .cta-cards { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+
+  /* NAV MOBILE — fix definitivo */
+  @media (max-width: 768px) {
+    nav .nav-links:not(.nav-open) { display: none !important; }
+    nav .nav-links.nav-open {
+      display: flex !important;
+      flex-direction: column !important;
+      position: fixed !important;
+      top: 68px !important;
+      left: 0 !important;
+      right: 0 !important;
+      background: white !important;
+      padding: 0.5rem 0 1.5rem !important;
+      border-bottom: 2px solid #e8f0ee !important;
+      z-index: 999 !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+      gap: 0 !important;
+    }
+    nav .nav-links.nav-open li a {
+      display: block !important;
+      padding: 0.9rem 5vw !important;
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      color: #1a1a1a !important;
+      border-bottom: 1px solid #f2f2f0 !important;
+    }
+    nav .nav-links.nav-open li a:hover {
+      color: #4e8c7c !important;
+      background: #f7f5f2 !important;
+    }
+  }
+
+</style>
+  <style>
+    .article-hero{background:var(--off-white);padding:4rem 5vw 3rem;position:relative;overflow:hidden}
+    .article-hero::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:var(--sage-bg);top:-80px;right:-60px;z-index:0}
+    .article-header{position:relative;z-index:1;max-width:760px;margin:0 auto}
+    .article-body{max-width:760px;margin:0 auto;padding:3rem 5vw 5rem}
+    .article-body h2{font-family:var(--font-serif);font-size:1.35rem;font-weight:700;margin:2.2rem 0 0.7rem;color:var(--text)}
+    .article-body h3{font-family:var(--font-serif);font-size:1.05rem;font-weight:700;margin:1.5rem 0 0.5rem;color:var(--sage-dark)}
+    .article-body p{font-size:0.95rem;color:var(--text-soft);line-height:1.85;margin-bottom:1rem}
+    .article-body strong{color:var(--text);font-weight:600}
+    .article-body ul{margin:0.5rem 0 1.2rem 0;padding:0;list-style:none}
+    .article-body ul li{font-size:0.93rem;color:var(--text-soft);line-height:1.75;padding:0.3rem 0 0.3rem 1.3rem;position:relative}
+    .article-body ul li::before{content:'✓';position:absolute;left:0;color:var(--sage-dark);font-weight:700}
+    .article-body blockquote{border-left:3px solid var(--sage-dark);padding:1rem 1.5rem;margin:1.5rem 0;background:var(--sage-bg);border-radius:0 var(--radius) var(--radius) 0}
+    .article-body blockquote p{color:var(--sage-section);font-style:italic;font-size:1rem;margin:0}
+    .article-cta{background:var(--sage-section);border-radius:var(--radius-lg);padding:2rem 2.5rem;margin-top:3rem;display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+    .article-cta p{color:rgba(255,255,255,0.85);font-size:0.92rem;line-height:1.6;flex:1;min-width:200px;margin:0}
+    .article-cta strong{color:white}
+    .article-meta-bar{display:flex;gap:1rem;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap}
+    .article-tag{display:inline-block;background:var(--sage-bg);color:var(--sage-dark);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.7rem;border-radius:100px}
+    .article-author{display:flex;align-items:center;gap:0.6rem}
+    .article-author img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:top}
+    .article-author span{font-size:0.82rem;font-weight:600;color:var(--text-soft)}
+    .article-back{display:inline-flex;align-items:center;gap:0.4rem;color:var(--sage-dark);font-size:0.85rem;font-weight:600;margin-bottom:1.5rem}
+    .article-back:hover{color:var(--sage-section)}
+    @media(max-width:768px){
+      
+      .article-body h2{font-size:1.15rem}
+    }
+  </style>
+  <!-- vexo-head -->
+  <meta name="theme-color" content="#2d6b5e"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="manifest" href="/manifest.webmanifest"/>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+  <meta property="og:site_name" content="Dra. Elisiane Elias"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:image" content="https://www.draelisianeelias.com.br/assets/dra-elisiane-elias-pediatra-osasco-sp.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Política de Privacidade | Dra. Elisiane Elias"/>
+  <meta name="twitter:description" content="Política de Privacidade do site da Dra. Elisiane Elias: como tratamos seus dados, cookies, terceiros e seus direitos conforme a LGPD."/>
+  <meta name="twitter:image" content="https://www.draelisianeelias.com.br/assets/dra-elisiane-elias-pediatra-osasco-sp.jpg"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.draelisianeelias.com.br/"},{"@type":"ListItem","position":2,"name":"Política de Privacidade","item":"https://www.draelisianeelias.com.br/privacidade"}]}
+  </script>
+</head>
+<body>
+  <nav aria-label="Navegação principal">
+    <div class="nav-logo">Dra. Elisiane Elias<span>Pediatria &amp; Hebiatria</span></div>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/sobre">Sobre Mim</a></li>
+      <li><a href="/pediatria">Pediatria</a></li>
+      <li><a href="/hebiatria">Hebiatria</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5511984994843?text=Olá%20Dra.%20Elisiane%2C%20gostaria%20de%20agendar%20uma%20consulta." class="nav-cta" target="_blank" rel="noopener">Agendar Consulta →</a>
+    <button class="nav-hamburger" aria-label="Abrir menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </nav>
+<div class="article-hero">
+  <div class="article-header fade-up">
+    <a href="/" class="article-back">← Voltar ao início</a>
+    <h1 style="font-family:var(--font-serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;line-height:1.2;color:var(--text);max-width:720px">Política de Privacidade</h1>
+    <p style="font-size:1rem;color:var(--text-soft);line-height:1.75;max-width:640px;margin-top:1rem">Esta política explica como os dados dos visitantes deste site são tratados, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD). Última atualização: 27 de junho de 2026.</p>
+  </div>
+</div>
+<div class="article-body fade-up" style="transition-delay:0.1s">
+
+  <h2>1. Quem é o responsável pelos dados</h2>
+  <p>O tratamento dos dados deste site é de responsabilidade de <strong>Dra. Elisiane Elias Mendes Machado</strong> (CRM SP 71423), médica pediatra e hebiatra, com consultórios em Vila Leopoldina (São Paulo – SP) e Osasco – SP. Para qualquer questão sobre seus dados, entre em contato pelo WhatsApp <a href="https://wa.me/5511984994843" target="_blank" rel="noopener">(11) 98499-4843</a> ou pela <a href="/contato">página de contato</a>.</p>
+
+  <h2>2. Quais dados coletamos</h2>
+  <p>Este site é informativo e <strong>não possui formulário de cadastro nem área de login</strong>. Os dados envolvidos limitam-se a:</p>
+  <ul>
+    <li><strong>Dados de navegação:</strong> informações técnicas coletadas automaticamente pelo provedor de hospedagem e por serviços de terceiros (como endereço IP aproximado, tipo de dispositivo e navegador, páginas visitadas).</li>
+    <li><strong>Dados que você fornece voluntariamente:</strong> ao clicar nos botões de WhatsApp, você é direcionado ao aplicativo e pode compartilhar nome, telefone e a mensagem que escrever. Esse contato passa a ser tratado pelo WhatsApp segundo as políticas da própria plataforma.</li>
+  </ul>
+
+  <h2>3. Para que usamos os dados</h2>
+  <ul>
+    <li>Permitir o funcionamento e a exibição correta do site;</li>
+    <li>Entender, de forma agregada, como o site é utilizado, para melhorá-lo;</li>
+    <li>Responder a contatos e solicitações de agendamento iniciados por você.</li>
+  </ul>
+
+  <h2>4. Base legal</h2>
+  <p>O tratamento se apoia nas hipóteses da LGPD, especialmente: o <strong>legítimo interesse</strong> (para operação e melhoria do site), o <strong>consentimento</strong> (para cookies não essenciais) e os <strong>procedimentos preliminares relacionados a um serviço</strong> (quando você nos contata para agendar).</p>
+
+  <h2>5. Cookies e serviços de terceiros</h2>
+  <p>Para funcionar e exibir conteúdo, o site utiliza serviços de terceiros que podem armazenar cookies ou coletar dados de navegação no seu dispositivo:</p>
+  <ul>
+    <li><strong>Google Maps</strong> — exibição dos mapas dos consultórios;</li>
+    <li><strong>Google Fonts</strong> — carregamento das fontes do site;</li>
+    <li><strong>WhatsApp / Meta</strong> — ao acionar os botões de contato.</li>
+  </ul>
+  <p>Esses serviços possuem políticas de privacidade próprias. Você pode bloquear ou apagar cookies nas configurações do seu navegador a qualquer momento; algumas funções, como os mapas, podem deixar de funcionar.</p>
+
+  <h2>6. Compartilhamento de dados</h2>
+  <p>Não vendemos nem comercializamos seus dados. O compartilhamento ocorre apenas com os provedores de tecnologia citados acima, na medida necessária para o funcionamento do site, ou quando exigido por lei ou autoridade competente.</p>
+
+  <h2>7. Seus direitos como titular</h2>
+  <p>Nos termos do art. 18 da LGPD, você pode solicitar, a qualquer momento: confirmação da existência de tratamento; acesso aos dados; correção de dados incompletos ou desatualizados; anonimização, bloqueio ou eliminação; portabilidade; informação sobre compartilhamento; e revogação do consentimento. Para exercer esses direitos, utilize os canais de contato indicados no item 1.</p>
+
+  <h2>8. Segurança e retenção</h2>
+  <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger os dados tratados. Os dados são mantidos apenas pelo tempo necessário às finalidades descritas ou conforme exigências legais.</p>
+
+  <h2>9. Confidencialidade médica</h2>
+  <p>Informações clínicas eventualmente trocadas durante o atendimento <strong>não trafegam por este site</strong> e são protegidas pelo sigilo médico, conforme o Código de Ética Médica.</p>
+
+  <h2>10. Alterações desta política</h2>
+  <p>Esta Política de Privacidade pode ser atualizada periodicamente. A data da última atualização é sempre indicada no topo desta página.</p>
+
+  <div class="article-cta">
+    <p><strong>Tem alguma dúvida sobre seus dados?</strong> Fale com a equipe da Dra. Elisiane Elias pelo WhatsApp.</p>
+    <a href="https://wa.me/5511984994843?text=Olá%2C%20tenho%20uma%20dúvida%20sobre%20a%20Política%20de%20Privacidade%20do%20site." class="btn-primary" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+  </div>
+</div>
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="color:white">
+          Dra. Elisiane Elias
+          <span style="color:rgba(255,255,255,0.55)">Pediatria &amp; Hebiatria</span>
+        </div>
+        <p>Cuidado humanizado para crianças e adolescentes em Vila Leopoldina (SP) e Osasco. CRM SP 71423.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/sobre">Sobre Mim</a></li>
+          <li><a href="/pediatria">Pediatria</a></li>
+          <li><a href="/hebiatria">Hebiatria</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="/pediatria">Pediatria em SP</a></li>
+          <li><a href="/pediatria">Pediatria em Osasco</a></li>
+          <li><a href="/hebiatria">Hebiatria em SP</a></li>
+          <li><a href="/hebiatria">Saúde do Adolescente</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contato</h4>
+        <p><a href="tel:+5511984994843">(11) 98499-4843</a></p>
+        <p style="margin-top:0.5rem;font-size:0.8rem;line-height:1.6">
+          <strong style="color:white">Vila Leopoldina – SP</strong><br>
+          Av. Mofarrej, 348 – Sala 106
+        </p>
+        <p style="margin-top:0.5rem;font-size:0.8rem;line-height:1.6">
+          <strong style="color:white">Osasco – SP</strong><br>
+          R. Ana Pereira Melo, 253
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> Dra. Elisiane Elias – Todos os direitos reservados &middot; <a href="/privacidade" style="color:inherit;text-decoration:underline">Pol&iacute;tica de Privacidade</a></span>
+      <span>CRM SP 71423 | Pediatria e Hebiatria em São Paulo e Osasco</span>
+    </div>
+  </footer>
+<!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511984994843?text=Olá%20Dra.%20Elisiane%2C%20gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Agendar consulta via WhatsApp com a Dra. Elisiane Elias">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+<script>
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    }
+
+    // Menu mobile — usa classe para evitar conflito com CSS !important
+    let menuOpen = false;
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      const cta   = document.querySelector('.nav-cta');
+      menuOpen = !menuOpen;
+      if (menuOpen) {
+        links.classList.add('nav-open');
+        if (cta) cta.style.display = 'none';
+      } else {
+        links.classList.remove('nav-open');
+        if (cta) cta.removeAttribute('style');
+      }
+    }
+    // Fechar ao clicar em link
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => { if (menuOpen) toggleMenu(); });
+      });
+    });
+
+    // Scroll fade-up
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+  <!-- vexo-lgpd -->
+  <style>
+    #cookie-consent{position:fixed;left:1rem;right:1rem;bottom:1rem;max-width:580px;margin:0 auto;background:var(--sage-section,#2d6b5e);color:#fff;padding:1rem 1.2rem;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,.25);font-family:'DM Sans',sans-serif;font-size:.85rem;line-height:1.5;display:none;z-index:9999;align-items:center;gap:1rem;flex-wrap:wrap}
+    #cookie-consent.show{display:flex}
+    #cookie-consent p{margin:0;flex:1;min-width:200px}
+    #cookie-consent a{color:#fff;text-decoration:underline}
+    #cookie-consent button{background:#fff;color:var(--sage-section,#2d6b5e);border:none;border-radius:100px;padding:.55rem 1.4rem;font-weight:600;font-size:.82rem;cursor:pointer;font-family:inherit;white-space:nowrap}
+    #cookie-consent button:hover{background:#e8f0ee}
+  </style>
+  <div id="cookie-consent" role="dialog" aria-label="Aviso de cookies">
+    <p>Usamos cookies e serviços de terceiros (como Google Maps e Google Fonts) para melhorar sua experiência. Ao continuar navegando, você concorda. Saiba mais na <a href="/privacidade">Política de Privacidade</a>.</p>
+    <button type="button" onclick="vexoAcceptCookies()">Aceitar</button>
+  </div>
+  <script>
+    document.querySelectorAll('.js-year').forEach(function(e){e.textContent=new Date().getFullYear();});
+    (function(){try{if(!localStorage.getItem('vexo_cookie_ok')){var el=document.getElementById('cookie-consent');if(el)el.classList.add('show');}}catch(e){}})();
+    function vexoAcceptCookies(){try{localStorage.setItem('vexo_cookie_ok','1');}catch(e){}var el=document.getElementById('cookie-consent');if(el)el.classList.remove('show');}
+  </script>
+
+</body>
+</html>

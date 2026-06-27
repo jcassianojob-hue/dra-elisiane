@@ -1,0 +1,18 @@
+# Cloudflare Pages — redirecionamentos 301 (.html legado → URL limpa)
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+/index.html                                      /                                              301
+/sobre.html                                      /sobre                                         301
+/pediatria.html                                  /pediatria                                     301
+/hebiatria.html                                  /hebiatria                                     301
+/blog.html                                       /blog                                          301
+/contato.html                                    /contato                                       301
+/obesidade-infantil.html                         /obesidade-infantil                            301
+/primeiro-ano-do-bebe.html                       /primeiro-ano-do-bebe                          301
+/saude-adolescente-hebiatria.html                /saude-adolescente-hebiatria                   301
+/vicio-em-telas.html                             /vicio-em-telas                                301
+/novembro-azul-saude-masculina-infancia.html     /novembro-azul-saude-masculina-infancia        301
+/violencia-contra-animais-adolescencia.html      /violencia-contra-animais-adolescencia         301
+/prevencao-gravidez-na-adolescencia.html         /prevencao-gravidez-na-adolescencia            301
+/dia-internacional-redes-sociais.html            /dia-internacional-redes-sociais               301
+/privacidade.html                                /privacidade                                   301
