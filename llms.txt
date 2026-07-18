@@ -1,4 +1,4 @@
-# Dra. Elisiane Elias — Pediatra e Hebiatra
+﻿# Dra. Elisiane Elias — Pediatra e Hebiatra
 
 > Médica pediatra e hebiatra (especialista em saúde do adolescente), CRM SP 71423, com atendimento humanizado a crianças e adolescentes em Vila Leopoldina (São Paulo – zona oeste) e Osasco – SP. Atendimento particular.
 
@@ -7,7 +7,7 @@ Dra. Elisiane Elias Mendes Machado é médica pediatra e hebiatra, vice-presiden
 ## Especialidades e serviços
 
 - **Pediatria**: acompanhamento de bebês e crianças — puericultura, desenvolvimento, vacinação, alimentação, sono, primeiro ano de vida e doenças comuns da infância.
-- **Hebiatria (saúde do adolescente)**: atendimento especializado de adolescentes (cerca de 10 a 20 anos) — puberdade, saúde emocional, comportamento, sexualidade, uso de telas e prevenção.
+- **Hebiatria (saúde do adolescente)**: atendimento especializado de adolescentes (cerca de 10 a 24 anos) — puberdade, saúde emocional, comportamento, sexualidade, uso de telas e prevenção.
 
 ## Atendimento
 
