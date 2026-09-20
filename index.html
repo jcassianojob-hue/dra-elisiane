@@ -173,6 +173,60 @@
     .section-title em { color: var(--sage-dark); font-style: normal; }
     .section-desc { color: var(--text-soft); font-size: 0.95rem; line-height: 1.75; margin-top: 1rem; max-width: 480px; }
 
+    /* VIDEO SECTION */
+    .video-section {
+      background: var(--off-white);
+      padding: 5rem 8vw;
+      text-align: center;
+    }
+    .video-section .section-eyebrow { display: inline-block; margin-bottom: 0.8rem; }
+    .video-section .section-title { margin: 0 auto 1rem; text-align: center; max-width: 640px; }
+    .video-section .section-desc { margin: 0 auto 2.5rem; text-align: center; max-width: 540px; }
+    .yt-facade {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 16px 56px rgba(78,140,124,0.18);
+      cursor: pointer;
+      background: #000;
+      aspect-ratio: 16/9;
+    }
+    .yt-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.3s;
+    }
+    .yt-facade:hover img { opacity: 0.85; }
+    .yt-play-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .yt-play-btn svg {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+      transition: transform 0.2s;
+    }
+    .yt-facade:hover .yt-play-btn svg { transform: scale(1.1); }
+    .yt-facade iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 768px) {
+      .video-section { padding: 3.5rem 5vw !important; }
+    }
+
     /* DIFERENCIAIS */
     .diferenciais { background: var(--white); }
     .diferenciais-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
@@ -626,6 +680,37 @@
       </div>
     </div>
   </header>
+
+  <!-- VIDEO -->
+  <section class="video-section fade-up" aria-labelledby="video-title">
+    <p class="section-eyebrow">Conheça a Dra. Elisiane</p>
+    <h2 class="section-title" id="video-title">Pediatria que <em>transforma</em> a jornada da sua família</h2>
+    <p class="section-desc">Mais de 30 anos de dedicação a crianças e adolescentes. Veja como é o cuidado da Dra. Elisiane Elias na prática.</p>
+    <div
+      class="yt-facade"
+      role="button"
+      tabindex="0"
+      aria-label="Assistir vídeo da Dra. Elisiane Elias no YouTube"
+      data-ytid="XucNmyLjjJk"
+      onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/XucNmyLjjJk?autoplay=1&rel=0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'"
+      onkeydown="if(event.key==='Enter'||event.key===' ')this.click()"
+    >
+      <img
+        src="https://i.ytimg.com/vi/XucNmyLjjJk/maxresdefault.jpg"
+        alt="Vídeo da Dra. Elisiane Elias – pediatra e hebiatra em SP e Osasco"
+        loading="lazy"
+        width="1280"
+        height="720"
+        onerror="this.src='https://i.ytimg.com/vi/XucNmyLjjJk/hqdefault.jpg'"
+      />
+      <div class="yt-play-btn" aria-hidden="true">
+        <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+          <path d="M66.52 7.74C65.7 4.71 63.29 2.3 60.26 1.48 54.96 0 34 0 34 0S13.04 0 7.74 1.48C4.71 2.3 2.3 4.71 1.48 7.74 0 13.04 0 24 0 24s0 10.96 1.48 16.26C2.3 43.29 4.71 45.7 7.74 46.52 13.04 48 34 48 34 48s20.96 0 26.26-1.48c3.03-.82 5.44-3.23 6.26-6.26C68 34.96 68 24 68 24s0-10.96-1.48-16.26z" fill="#FF0000"/>
+          <path d="M27 34l18-10-18-10v20z" fill="#fff"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
   <!-- DIFERENCIAIS -->
   <section class="section diferenciais" aria-labelledby="diferenciais-title">
